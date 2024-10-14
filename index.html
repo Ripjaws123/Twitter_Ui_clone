@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="./src/output.css">
+</head>
+
+<body class="bg-black text-white">
+        <div class="flex container h-screen justify-center m-auto">
+
+                <!-- Left Side details -->
+
+                <div class="left font-medium w-3/5 sticky top-0">
+
+                        <!-- sidebar and user details -->
+
+                        <div class="sidebar flex justify-end flex-col sticky top-0">
+
+                                <!-- logo -->
+
+                                <div class="logo flex justify-center p-4 mr-8">
+                                        <img src="./assets/logo.svg" srcset="" class="w-9 invert">
+                                </div>
+
+                                <!-- slidebar -->
+
+                                <ul class="flex flex-col items-start w-3/5 gap-1 ml-[166px]">
+                                        <li
+                                                class="flex justify-center gap-4 items-center hover:bg-gray-900 p-2 hover:rounded-full">
+                                                <img src="./assets/home.svg" srcset="" class="w-8 invert"><a href=""
+                                                        class="w-8 w-fit"><span class="text-lg">Home</span></a>
+                                        </li>
+                                        <li
+                                                class="flex justify-center gap-4 items-center hover:bg-gray-900 p-2 hover:rounded-full">
+                                                <img src="./assets/search.svg" class="w-8 invert"><a href=""
+                                                        class="w-8 w-fit"><span class="text-lg">Explore</span></a>
+                                        </li>
+                                        <li
+                                                class="flex justify-center gap-4 items-center hover:bg-gray-900 p-2 hover:rounded-full">
+                                                <img src="./assets/notify.svg" class="w-8 invert"><a href=""
+                                                        class="w-8 w-fit"><span class="text-lg">Notifications</span></a>
+                                        </li>
+                                        <li
+                                                class="flex justify-center gap-4 items-center hover:bg-gray-900 p-2 hover:rounded-full">
+                                                <img src="./assets/mssg.svg" class="w-8 invert"><a href=""
+                                                        class="w-8 w-fit"><span class="text-lg">Messages</span></a>
+                                        </li>
+                                        <li
+                                                class="flex justify-center gap-4 items-center hover:bg-gray-900 p-2 hover:rounded-full">
+                                                <img src="./assets/grok.svg" class="w-8 invert"><a href=""
+                                                        class="w-8 w-fit"><span class="text-lg">Grok</span></a>
+                                        </li>
+                                        <li
+                                                class="flex justify-center gap-4 items-center hover:bg-gray-900 p-2 hover:rounded-full">
+                                                <img src="./assets/comm.svg" class="w-8 invert"><a href=""
+                                                        class="w-8 w-fit"><span class="text-lg">Communities</span></a>
+                                        </li>
+                                        <li
+                                                class="flex justify-center gap-4 items-center hover:bg-gray-900 p-2 hover:rounded-full">
+                                                <img src="./assets/logo.svg" class="w-8 invert"><a href=""
+                                                        class="w-8 w-fit"><span class="text-lg">Premium</span></a>
+                                        </li>
+                                        <li
+                                                class="flex justify-center gap-4 items-center hover:bg-gray-900 p-2 hover:rounded-full">
+                                                <img src="./assets/profile.svg" class="w-8 invert"><a href=""
+                                                        class="w-8 w-fit"><span class="text-lg">Profile</span></a>
+                                        </li>
+                                        <li
+                                                class="flex justify-center gap-4 items-center hover:bg-gray-900 p-2 hover:rounded-full">
+                                                <img src="./assets/more.svg" class="w-8 invert"><a href=""
+                                                        class="w-8 w-fit"><span class="text-lg">More</span></a>
+                                        </li>
+                                </ul>
+                        </div>
+                        <div class="button flex justify-center mt-3 sticky top-[79vh]">
+                                <button class=" bg-blue-600 w-44 p-4 pr-32 pl-24 rounded-full ml-36">Post</button>
+                        </div>
+
+                        <!-- user detail -->
+                        <div
+                                class="account w-64 h-16 mt-7 flex items-center justify-start gap-3 rounded-full ml-32 pl-3 hover:bg-gray-800 hover:cursor-pointer">
+                                <div class="img">
+                                        <img src="./assets/prof.jpg" class="w-12 h-12 rounded-full object-cover">
+                                </div>
+                                <div class="details flex flex-col">
+                                        <span class="font-bold text-lg">Ripon Goswami</span>
+                                        <Span class="font-extralight">@ripongoswami1234</Span>
+                                </div>
+                        </div>
+                </div>
+
+                <!-- Middle Portion details -->
+
+                <div class="Middle font-medium w-full border-x-[0.5px] border-x-gray-700">
+
+                        <!-- top nav part -->
+
+                        <div class="top flex h-14 sticky top-0 border-b-[0.5px] border-b-gray-700 bg-black opacity-90 ">
+                                <div
+                                        class="left w-full flex justify-center items-center hover:bg-gray-950 hover:cursor-pointer text-base font-normal relative">
+                                        <span>For You</span>
+                                        <div class="line bg-blue-500 w-[53px] h-[5px] absolute top-[51px] rounded-full">
+                                        </div>
+                                </div>
+                                <div
+                                        class="right w-full flex justify-center items-center hover:bg-gray-950 hover:cursor-pointer text-base font-normal">
+                                        <span>Following</span>
+                                </div>
+                        </div>
+
+                        <!-- Personal Posts -->
+
+                        <div class="what w-full pl-4 flex">
+                                <div class="img pt-5 pr-3">
+                                        <img src="./assets/prof.jpg" class="w-10 h-10 rounded-full object-cover">
+                                </div>
+                                <div class="entry  text-2xl font-thin w-full">
+                                        <div class="search pt-6 pb-6">
+                                                <input type="text" placeholder="What's Happening?!" class="bg-black">
+                                        </div>
+                                        <div class="options flex gap-6 pb-2">
+                                                <img src="./assets/sllogo1.svg" class="invert w-5 cursor-pointer">
+                                                <img src="./assets/sllogo2.svg" class="invert w-5 cursor-pointer">
+                                                <img src="./assets/sllogo3.svg" class="invert w-5 cursor-pointer">
+                                                <img src="./assets/sllogo4.svg" class="invert w-5 cursor-pointer">
+                                                <img src="./assets/sllogo5.svg" class="invert w-5 cursor-pointer">
+                                                <img src="./assets/sllogo6.svg" class="invert w-5 cursor-pointer">
+                                                <button
+                                                        class="bg-blue-600 px-4 py-1 text-lg font-semibold rounded-full ml-52 md:ml-28">Post</button>
+                                        </div>
+                                </div>
+                        </div>
+                        <div class="line h-[0.5px] w-full bg-gray-700"></div>
+
+                        <!-- All Public Posts -->
+
+                        <div class="post hover:cursor-pointer hover:bg-slate-900">
+                                <div
+                                        class="account w-full pt-2 flex items-center justify-start gap-3 rounded-full pl-4">
+                                        <div class="img">
+                                                <img src="./assets/prof.jpg"
+                                                        class="w-10 h-10 rounded-full object-cover">
+                                        </div>
+                                        <div class="details1">
+                                                <div class="details flex gap-2">
+                                                        <span class="font-bold text-[17px]">Ripon Goswami</span>
+                                                        <span
+                                                                class="font-extralight text-base text-gray-500">@ripongoswami</span>
+                                                        <div
+                                                                class="dots flex items-center ml-[280px] p-[5px] rounded-full hover:cursor-pointer hover:bg-gray-800 md:ml-[160px]">
+                                                                <img src="./assets/threedot.svg" class="invert w-4 ">
+                                                        </div>
+                                                </div>
+                                                <span class="font-semibold text-base">Electronic voting machines and
+                                                        anything mailed in is too risky. </span>
+                                        </div>
+                                </div>
+                                <div class="pic pl-[75px] pr-6 mt-6">
+                                        <img src="./assets/prof.jpg" class="object-cover rounded-2xl w-full h-[300px]">
+                                </div>
+                                <div class="options pl-[75px] pt-3 flex gap-[66px] pb-2">
+                                        <div class="details flex items-center">
+                                                <div
+                                                        class="mssg p-[5px] rounded-full hover:bg-blue-500 hover:cursor-pointer">
+                                                        <img src="./assets/mss.svg" class="invert w-[18px]">
+                                                </div>
+                                                <span class="font-thin text-sm text-gray-500">80.5K</span>
+                                        </div>
+                                        <div class="details flex items-center">
+                                                <div
+                                                        class="retwitt p-[5px] rounded-full hover:bg-green-500 hover:cursor-pointer">
+                                                        <img src="./assets/ret.svg" class="invert w-[18px]">
+                                                </div>
+                                                <span class="font-thin text-sm text-gray-500">80.5K</span>
+                                        </div>
+                                        <div class="details flex items-center">
+                                                <div
+                                                        class="like p-[5px] rounded-full hover:bg-pink-500 hover:cursor-pointer">
+                                                        <img src="./assets/like.svg" class="invert w-[18px]">
+                                                </div>
+                                                <span class="font-thin text-sm text-gray-500">80.5K</span>
+                                        </div>
+                                        <div class="details flex items-center">
+                                                <div
+                                                        class="views p-[5px] rounded-full hover:bg-blue-500 hover:cursor-pointer">
+                                                        <img src="./assets/views.svg" class="invert w-[18px]">
+                                                </div>
+                                                <span class="font-thin text-sm text-gray-500">80.5K</span>
+                                        </div>
+                                        <div class="details flex items-center">
+                                                <div
+                                                        class="bookmark p-[5px] rounded-full hover:bg-blue-500 hover:cursor-pointer">
+                                                        <img src="./assets/bkmrk.svg" class="invert w-[18px]">
+                                                </div>
+                                                <div
+                                                        class="share p-[5px] rounded-full hover:bg-blue-500 hover:cursor-pointer">
+                                                        <img src="./assets/shr.svg" class="invert w-[18px]">
+                                                </div>
+                                        </div>
+                                </div>
+
+                        </div>
+                        <div class="line h-[0.5px] w-full bg-gray-700"></div>
+                        <div class="post hover:cursor-pointer hover:bg-slate-900">
+                                <div
+                                        class="account w-full pt-2 flex items-center justify-start gap-3 rounded-full pl-4">
+                                        <div class="img">
+                                                <img src="./assets/prof.jpg"
+                                                        class="w-10 h-10 rounded-full object-cover">
+                                        </div>
+                                        <div class="details1">
+                                                <div class="details flex gap-2">
+                                                        <span class="font-bold text-[17px]">Ripon Goswami</span>
+                                                        <span
+                                                                class="font-extralight text-base text-gray-500">@ripongoswami</span>
+                                                        <div
+                                                                class="dots flex items-center ml-[280px] p-[5px] md:ml-[160px] rounded-full hover:cursor-pointer hover:bg-gray-800">
+                                                                <img src="./assets/threedot.svg" class="invert w-4 ">
+                                                        </div>
+                                                </div>
+                                                <span class="font-semibold text-base">Electronic voting machines and
+                                                        anything mailed in is too risky. </span>
+                                        </div>
+                                </div>
+                                <div class="pic pl-[75px] pr-6 mt-6">
+                                        <img src="./assets/prof.jpg" class="object-cover rounded-2xl w-full h-[300px]">
+                                </div>
+                                <div class="options pl-[75px] pt-3 flex gap-[66px]">
+                                        <div class="details flex items-center">
+                                                <div
+                                                        class="mssg p-[5px] rounded-full hover:bg-blue-500 hover:cursor-pointer">
+                                                        <img src="./assets/mss.svg" class="invert w-[18px]">
+                                                </div>
+                                                <span class="font-thin text-sm text-gray-500">80.5K</span>
+                                        </div>
+                                        <div class="details flex items-center">
+                                                <div
+                                                        class="retwitt p-[5px] rounded-full hover:bg-green-500 hover:cursor-pointer">
+                                                        <img src="./assets/ret.svg" class="invert w-[18px]">
+                                                </div>
+                                                <span class="font-thin text-sm text-gray-500">80.5K</span>
+                                        </div>
+                                        <div class="details flex items-center">
+                                                <div
+                                                        class="like p-[5px] rounded-full hover:bg-pink-500 hover:cursor-pointer">
+                                                        <img src="./assets/like.svg" class="invert w-[18px]">
+                                                </div>
+                                                <span class="font-thin text-sm text-gray-500">80.5K</span>
+                                        </div>
+                                        <div class="details flex items-center">
+                                                <div
+                                                        class="views p-[5px] rounded-full hover:bg-blue-500 hover:cursor-pointer">
+                                                        <img src="./assets/views.svg" class="invert w-[18px]">
+                                                </div>
+                                                <span class="font-thin text-sm text-gray-500">80.5K</span>
+                                        </div>
+                                        <div class="details flex items-center">
+                                                <div
+                                                        class="bookmark p-[5px] rounded-full hover:bg-blue-500 hover:cursor-pointer">
+                                                        <img src="./assets/bkmrk.svg" class="invert w-[18px]">
+                                                </div>
+                                                <div
+                                                        class="share p-[5px] rounded-full hover:bg-blue-500 hover:cursor-pointer">
+                                                        <img src="./assets/shr.svg" class="invert w-[18px]">
+                                                </div>
+                                        </div>
+                                </div>
+
+                        </div>
+                        <div class="line h-[0.5px] w-full bg-gray-700"></div>
+                        <div class="post hover:cursor-pointer hover:bg-slate-900">
+                                <div
+                                        class="account w-full pt-2 flex items-center justify-start gap-3 rounded-full pl-4">
+                                        <div class="img">
+                                                <img src="./assets/prof.jpg"
+                                                        class="w-10 h-10 rounded-full object-cover">
+                                        </div>
+                                        <div class="details1">
+                                                <div class="details flex gap-2">
+                                                        <span class="font-bold text-[17px]">Ripon Goswami</span>
+                                                        <span
+                                                                class="font-extralight text-base text-gray-500">@ripongoswami</span>
+                                                        <div
+                                                                class="dots flex items-center ml-[280px] p-[5px] rounded-full md:ml-[160px] hover:cursor-pointer hover:bg-gray-800">
+                                                                <img src="./assets/threedot.svg" class="invert w-4 ">
+                                                        </div>
+                                                </div>
+                                                <span class="font-semibold text-base">Electronic voting machines and
+                                                        anything mailed in is too risky. </span>
+                                        </div>
+                                </div>
+                                <div class="pic pl-[75px] pr-6 mt-6">
+                                        <img src="./assets/prof.jpg" class="object-cover rounded-2xl w-full h-[300px]">
+                                </div>
+                                <div class="options pl-[75px] pt-3 flex gap-[66px]">
+                                        <div class="details flex items-center">
+                                                <div
+                                                        class="mssg p-[5px] rounded-full hover:bg-blue-500 hover:cursor-pointer">
+                                                        <img src="./assets/mss.svg" class="invert w-[18px]">
+                                                </div>
+                                                <span class="font-thin text-sm text-gray-500">80.5K</span>
+                                        </div>
+                                        <div class="details flex items-center">
+                                                <div
+                                                        class="retwitt p-[5px] rounded-full hover:bg-green-500 hover:cursor-pointer">
+                                                        <img src="./assets/ret.svg" class="invert w-[18px]">
+                                                </div>
+                                                <span class="font-thin text-sm text-gray-500">80.5K</span>
+                                        </div>
+                                        <div class="details flex items-center">
+                                                <div
+                                                        class="like p-[5px] rounded-full hover:bg-pink-500 hover:cursor-pointer">
+                                                        <img src="./assets/like.svg" class="invert w-[18px]">
+                                                </div>
+                                                <span class="font-thin text-sm text-gray-500">80.5K</span>
+                                        </div>
+                                        <div class="details flex items-center">
+                                                <div
+                                                        class="views p-[5px] rounded-full hover:bg-blue-500 hover:cursor-pointer">
+                                                        <img src="./assets/views.svg" class="invert w-[18px]">
+                                                </div>
+                                                <span class="font-thin text-sm text-gray-500">80.5K</span>
+                                        </div>
+                                        <div class="details flex items-center">
+                                                <div
+                                                        class="bookmark p-[5px] rounded-full hover:bg-blue-500 hover:cursor-pointer">
+                                                        <img src="./assets/bkmrk.svg" class="invert w-[18px]">
+                                                </div>
+                                                <div
+                                                        class="share p-[5px] rounded-full hover:bg-blue-500 hover:cursor-pointer">
+                                                        <img src="./assets/shr.svg" class="invert w-[18px]">
+                                                </div>
+                                        </div>
+                                </div>
+
+                        </div>
+                        <div class="line h-[0.5px] w-full bg-gray-700"></div>
+                        <div class="post hover:cursor-pointer hover:bg-slate-900">
+                                <div
+                                        class="account w-full pt-2 flex items-center justify-start gap-3 rounded-full pl-4">
+                                        <div class="img">
+                                                <img src="./assets/prof.jpg"
+                                                        class="w-10 h-10 rounded-full object-cover">
+                                        </div>
+                                        <div class="details1">
+                                                <div class="details flex gap-2">
+                                                        <span class="font-bold text-[17px]">Ripon Goswami</span>
+                                                        <span
+                                                                class="font-extralight text-base text-gray-500">@ripongoswami</span>
+                                                        <div
+                                                                class="dots flex items-center ml-[280px] p-[5px] rounded-full md:ml-[160px] hover:cursor-pointer hover:bg-gray-800">
+                                                                <img src="./assets/threedot.svg" class="invert w-4 ">
+                                                        </div>
+                                                </div>
+                                                <span class="font-semibold text-base">Electronic voting machines and
+                                                        anything mailed in is too risky. </span>
+                                        </div>
+                                </div>
+                                <div class="pic pl-[75px] pr-6 mt-6">
+                                        <img src="./assets/prof.jpg" class="object-cover rounded-2xl w-full h-[300px]">
+                                </div>
+                                <div class="options pl-[75px] pt-3 flex gap-[66px]">
+                                        <div class="details flex items-center">
+                                                <div
+                                                        class="mssg p-[5px] rounded-full hover:bg-blue-500 hover:cursor-pointer">
+                                                        <img src="./assets/mss.svg" class="invert w-[18px]">
+                                                </div>
+                                                <span class="font-thin text-sm text-gray-500">80.5K</span>
+                                        </div>
+                                        <div class="details flex items-center">
+                                                <div
+                                                        class="retwitt p-[5px] rounded-full hover:bg-green-500 hover:cursor-pointer">
+                                                        <img src="./assets/ret.svg" class="invert w-[18px]">
+                                                </div>
+                                                <span class="font-thin text-sm text-gray-500">80.5K</span>
+                                        </div>
+                                        <div class="details flex items-center">
+                                                <div
+                                                        class="like p-[5px] rounded-full hover:bg-pink-500 hover:cursor-pointer">
+                                                        <img src="./assets/like.svg" class="invert w-[18px]">
+                                                </div>
+                                                <span class="font-thin text-sm text-gray-500">80.5K</span>
+                                        </div>
+                                        <div class="details flex items-center">
+                                                <div
+                                                        class="views p-[5px] rounded-full hover:bg-blue-500 hover:cursor-pointer">
+                                                        <img src="./assets/views.svg" class="invert w-[18px]">
+                                                </div>
+                                                <span class="font-thin text-sm text-gray-500">80.5K</span>
+                                        </div>
+                                        <div class="details flex items-center">
+                                                <div
+                                                        class="bookmark p-[5px] rounded-full hover:bg-blue-500 hover:cursor-pointer">
+                                                        <img src="./assets/bkmrk.svg" class="invert w-[18px]">
+                                                </div>
+                                                <div
+                                                        class="share p-[5px] rounded-full hover:bg-blue-500 hover:cursor-pointer">
+                                                        <img src="./assets/shr.svg" class="invert w-[18px]">
+                                                </div>
+                                        </div>
+                                </div>
+
+                        </div>
+                        <div class="line h-[0.5px] w-full bg-gray-700"></div>
+                        <div class="post hover:cursor-pointer hover:bg-slate-900">
+                                <div
+                                        class="account w-full pt-2 flex items-center justify-start gap-3 rounded-full pl-4">
+                                        <div class="img">
+                                                <img src="./assets/prof.jpg"
+                                                        class="w-10 h-10 rounded-full object-cover">
+                                        </div>
+                                        <div class="details1">
+                                                <div class="details flex gap-2">
+                                                        <span class="font-bold text-[17px]">Ripon Goswami</span>
+                                                        <span
+                                                                class="font-extralight text-base text-gray-500">@ripongoswami</span>
+                                                        <div
+                                                                class="dots flex items-center ml-[280px] p-[5px] rounded-full md:ml-[160px] hover:cursor-pointer hover:bg-gray-800">
+                                                                <img src="./assets/threedot.svg" class="invert w-4 ">
+                                                        </div>
+                                                </div>
+                                                <span class="font-semibold text-base">Electronic voting machines and
+                                                        anything mailed in is too risky. </span>
+                                        </div>
+                                </div>
+                                <div class="pic pl-[75px] pr-6 mt-6">
+                                        <img src="./assets/prof.jpg" class="object-cover rounded-2xl w-full h-[300px]">
+                                </div>
+                                <div class="options pl-[75px] pt-3 flex gap-[66px]">
+                                        <div class="details flex items-center">
+                                                <div
+                                                        class="mssg p-[5px] rounded-full hover:bg-blue-500 hover:cursor-pointer">
+                                                        <img src="./assets/mss.svg" class="invert w-[18px]">
+                                                </div>
+                                                <span class="font-thin text-sm text-gray-500">80.5K</span>
+                                        </div>
+                                        <div class="details flex items-center">
+                                                <div
+                                                        class="retwitt p-[5px] rounded-full hover:bg-green-500 hover:cursor-pointer">
+                                                        <img src="./assets/ret.svg" class="invert w-[18px]">
+                                                </div>
+                                                <span class="font-thin text-sm text-gray-500">80.5K</span>
+                                        </div>
+                                        <div class="details flex items-center">
+                                                <div
+                                                        class="like p-[5px] rounded-full hover:bg-pink-500 hover:cursor-pointer">
+                                                        <img src="./assets/like.svg" class="invert w-[18px]">
+                                                </div>
+                                                <span class="font-thin text-sm text-gray-500">80.5K</span>
+                                        </div>
+                                        <div class="details flex items-center">
+                                                <div
+                                                        class="views p-[5px] rounded-full hover:bg-blue-500 hover:cursor-pointer">
+                                                        <img src="./assets/views.svg" class="invert w-[18px]">
+                                                </div>
+                                                <span class="font-thin text-sm text-gray-500">80.5K</span>
+                                        </div>
+                                        <div class="details flex items-center">
+                                                <div
+                                                        class="bookmark p-[5px] rounded-full hover:bg-blue-500 hover:cursor-pointer">
+                                                        <img src="./assets/bkmrk.svg" class="invert w-[18px]">
+                                                </div>
+                                                <div
+                                                        class="share p-[5px] rounded-full hover:bg-blue-500 hover:cursor-pointer">
+                                                        <img src="./assets/shr.svg" class="invert w-[18px]">
+                                                </div>
+                                        </div>
+                                </div>
+
+                        </div>
+                        <div class="line h-[0.5px] w-full bg-gray-700"></div>
+                </div>
+
+                <!-- Right Portion details -->
+
+                <div class="right w-3/4">
+
+                        <!-- Search -->
+
+                        <div class="search-section w-full h-14">
+                                <div
+                                        class="search flex justify-start items-center p-3 bg-gray-600 w-3/4 ml-6 rounded-full mt-1">
+                                        <img src="./assets/search.svg" class="invert w-5 cursor-pointer">
+                                        <input type="text" placeholder="Search"
+                                                class="font-medium ml-3 border-none bg-transparent w-72">
+                                </div>
+                        </div>
+                        <div class="cont ml-6 w-3/4 mt-5">
+
+                                <!-- Subscribe Section -->
+
+                                <div
+                                        class="sub border-[0.5px] border-gray-700 rounded-2xl h-36 pl-5 gap-1 pt-1 md:h-40">
+                                        <h1 class="font-bold text-xl pb-2">Subscribe to Premium</h1>
+                                        <p class="pb-2 pr-2">Subscribe to unlock new features and if eligible, receive a
+                                                share of ads revenue.</p>
+                                        <button class="bg-blue-500 px-3 py-1 rounded-full">Subscribe</button>
+                                </div>
+
+                                <!-- Whats happening section -->
+
+                                <div class="happen border-[0.5px] border-gray-700 rounded-2xl mt-5">
+                                        <div class="happening pl-5">
+                                                <h1 class="font-bold text-xl pb-2 mt-2">What's Happening</h1>
+                                        </div>
+                                        <!-- poster section -->
+                                        <div
+                                                class="poster flex items-center gap-3 mt-2 pl-5 py-3 hover:cursor-pointer hover:bg-gray-950">
+                                                <div class="img">
+                                                        <img src="./assets/prof.jpg"
+                                                                class="w-20 h-20 rounded-xl object-cover">
+
+                                                </div>
+                                                <div class="details flex flex-col pb-9">
+                                                        <span class="font-semibold">Ripon</span>
+                                                        <Span class="font-extralight">@ripongoswami1234</Span>
+                                                </div>
+                                        </div>
+                                        <!-- Trending Twiit -->
+                                        <div class="trend mt-2 pl-5 py-2 hover:cursor-pointer hover:bg-gray-950">
+                                                <div class="head font-bold">#MadeForIndia</div>
+                                                <div class="middle text-base text-gray-500">Trader Hoon,Gambler Nahi.
+                                                </div>
+                                                <div class="tail text-sm text-gray-500">Promoted by Dhan - Made for
+                                                        Trade</div>
+                                        </div>
+                                        <div class="trend mt-2 pl-5 py-2 hover:cursor-pointer hover:bg-gray-950">
+                                                <div class="middle text-sm text-gray-500">Politics.Trending</div>
+                                                <div class="head font-bold">#MadeForIndia</div>
+                                                <div class="tail text-sm text-gray-500">30.2K Posts</div>
+                                        </div>
+                                        <div class="trend mt-2 pl-5 py-2 hover:cursor-pointer hover:bg-gray-950">
+                                                <div class="middle text-sm text-gray-500">Politics.Trending</div>
+                                                <div class="head font-bold">#MadeForIndia</div>
+                                                <div class="tail text-sm text-gray-500">32.7K Posts</div>
+                                        </div>
+                                        <div class="trend mt-2 pl-5 py-2 hover:cursor-pointer hover:bg-gray-950">
+                                                <div class="middle text-sm text-gray-500">Politics.Trending</div>
+                                                <div class="head font-bold">#MadeForIndia</div>
+                                                <div class="tail text-sm text-gray-500">32.7K Posts</div>
+                                        </div>
+                                        <div
+                                                class="more mt-2 pl-5 py-3 hover:cursor-pointer hover:bg-gray-950 rounded-b-2xl">
+                                                <h1 class="text-base text-blue-600">Show More</h1>
+                                        </div>
+                                </div>
+
+                                <!-- Who to Follow -->
+
+                                <div class="Follow border rounded-2xl mt-5">
+                                        <div class="following pl-5">
+                                                <h1 class="font-bold text-xl pb-2 mt-2">Who to Follow</h1>
+                                        </div>
+                                        <!-- poster section -->
+                                        <div
+                                                class="account h-16 mt-2 flex items-center justify-start gap-3 pl-5 hover:cursor-pointer hover:bg-gray-950">
+                                                <div class="img">
+                                                        <img src="./assets/prof.jpg"
+                                                                class="w-10 h-10 rounded-full object-cover">
+                                                </div>
+                                                <div class="info flex gap-16">
+                                                        <div class="details flex flex-col pb-1">
+                                                                <span class="font-bold text-sm">Ripon Goswami</span>
+                                                                <Span
+                                                                        class="font-extralight text-sm">@ripongoswami1234</Span>
+                                                        </div>
+                                                        <div class="button">
+                                                                <button
+                                                                        class="p-3 bg-slate-100 text-black rounded-full flex items-center h-10 px-5 font-bold">Follow</button>
+                                                        </div>
+                                                </div>
+                                        </div>
+                                        <div
+                                                class="account h-16 mt-2 flex items-center justify-start gap-3 pl-5 hover:cursor-pointer hover:bg-gray-950">
+                                                <div class="img">
+                                                        <img src="./assets/prof.jpg"
+                                                                class="w-10 h-10 rounded-full object-cover">
+                                                </div>
+                                                <div class="info flex gap-16">
+                                                        <div class="details flex flex-col pb-1">
+                                                                <span class="font-bold text-sm">Ripon Goswami</span>
+                                                                <Span
+                                                                        class="font-extralight text-sm">@ripongoswami1234</Span>
+                                                        </div>
+                                                        <div class="button">
+                                                                <button
+                                                                        class="p-3 bg-slate-100 text-black rounded-full flex items-center h-10 px-5 font-bold">Follow</button>
+                                                        </div>
+                                                </div>
+                                        </div>
+                                        <div
+                                                class="account h-16 mt-2 flex items-center justify-start gap-3 pl-5 hover:cursor-pointer hover:bg-gray-950">
+                                                <div class="img">
+                                                        <img src="./assets/prof.jpg"
+                                                                class="w-10 h-10 rounded-full object-cover">
+                                                </div>
+                                                <div class="info flex gap-16">
+                                                        <div class="details flex flex-col pb-1">
+                                                                <span class="font-bold text-sm">Ripon Goswami</span>
+                                                                <Span
+                                                                        class="font-extralight text-sm">@ripongoswami1234</Span>
+                                                        </div>
+                                                        <div class="button">
+                                                                <button
+                                                                        class="p-3 bg-slate-100 text-black rounded-full flex items-center h-10 px-5 font-bold">Follow</button>
+                                                        </div>
+                                                </div>
+                                        </div>
+                                        <div
+                                                class="more mt-2 pl-5 py-3 hover:cursor-pointer hover:bg-gray-950 rounded-b-2xl">
+                                                <h1 class="text-base text-blue-600">Show More</h1>
+                                        </div>
+                                </div>
+
+                                <!-- footer -->
+
+                                <div class="footer mt-5 pl-4 flex flex-wrap gap-4">
+                                        <span class="hover:cursor-pointer hover:underline text-gray-600 text-sm">Terms
+                                                of Service</span>
+                                        <span class="hover:cursor-pointer hover:underline text-gray-600 text-sm">Privacy
+                                                Policy</span>
+                                        <span class="hover:cursor-pointer hover:underline text-gray-600 text-sm">Cookie
+                                                Policy</span>
+                                        <span
+                                                class="hover:cursor-pointer hover:underline text-gray-600 text-sm">Accessibility</span>
+                                        <span class="hover:cursor-pointer hover:underline text-gray-600 text-sm">Ads
+                                                info</span>
+                                        <span
+                                                class="hover:cursor-pointer hover:underline text-gray-600 text-sm">More</span>
+                                        <span class="hover:cursor-pointer hover:underline text-gray-600 text-sm">@2024 X
+                                                Corp.</span>
+                                </div>
+                        </div>
+                </div>
+</body>
+
+</html>
